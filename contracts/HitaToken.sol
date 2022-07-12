@@ -11,7 +11,7 @@ contract HitaToken is ERC20, AccessControl {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     uint256 private constant initialSupply = 1_000_000_000;
 
-    constructor() ERC20("HitaCoin", "HTC") {
+    constructor() ERC20("Hita Coin", "HTC") {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MINTER_ROLE, msg.sender);
         _mint(msg.sender, initialSupply * (10 ** decimals()));
